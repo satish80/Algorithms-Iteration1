@@ -1,0 +1,6 @@
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\ProblemSet\Solutions\bin\Debug\Solutions.exe.config
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\ProblemSet\Solutions\bin\Debug\Solutions.exe
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\ProblemSet\Solutions\bin\Debug\Solutions.pdb
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\ProblemSet\Solutions\obj\Debug\Solutions.csprojResolveAssemblyReference.cache
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\ProblemSet\Solutions\obj\Debug\Solutions.exe
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\ProblemSet\Solutions\obj\Debug\Solutions.pdb

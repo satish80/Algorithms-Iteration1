@@ -1,0 +1,8 @@
+Single linked list swap L1 with Ln and L2 with Ln-1
+Shortest path to a node from all other nodes
+Sum of 2 sets of pebble
+Office and holidays
+
+
+Design Google Ajax search 
+Distributed Cache

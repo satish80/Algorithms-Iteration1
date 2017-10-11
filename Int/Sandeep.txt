@@ -1,0 +1,1136 @@
+
+VMware Telephonic
+
+
+struct iovec{
+
+void* base;
+
+size_t length;
+
+}; 
+
+
+Merge all consecutive segments and return size of the compressed array of iovecs ( similar to leet code problem merge intervals , but do it in-place).
+
+
+Onsite
+
+Round1
+
+1.memmove without temp buffer implementation, 
+
+
+2.Given a 32 bit unsigned int, and start and end position, and a specific pattern set the new pattern between two positions
+
+
+Round2
+
+1.Kth smallest element in two sorted arrays and caching design questions
+
+
+Round 3
+
+1.Caching Design 
+
+
+2.Tracking hot working set, how to do you tell your customer what is sufficient size of cache for a given workload
+
+
+Round 4 - Lunch
+
+1.About projects on resume and some general concepts
+
+
+Round 5 
+
+1.Sorted array rotated at pivot element position, find index of an element in O(lgn) time.
+
+
+Round 6
+
+1.Overlapping intervals, find all intersections and return intersections as subset. 
+
+
+
+Apple - Telephonic
+
+1.Describe every step in low level details after issuing open(“/a/b.txt”) call in Operating systems
+
+
+2.Difference between process and thread 
+
+
+3.Synchronization mechanisms 
+
+
+4.How do you implement basic lock
+
+
+
+Tintri Storage 
+
+1.Reverse Single linked list
+
+
+2.BST Find an element - Iterative 
+
+
+3.BST Insert an element - Iterative 
+
+
+4.BST Make thread safe of above operations, solution - use read/write locks 
+
+
+
+Hedvig Inc - Storage Startup 
+
+
+Telephonic -
+
+Q1: Input: Array of sorted integers, which are sorted, unique and in the range (0,2^32 -1 ) , i.e. 4-byte numbers
+
+Output: String containing all the integers in array, such that sizeof(string) < 4N, where N = number of integers
+
+
+
+String encode (vector<int> numArray)
+
+{
+
+
+}
+
+
+int decode(String str, int index)
+
+{
+
+}
+
+
+Example:
+
+Input: 1 10 100 255
+
+Output: <String>
+
+
+decode(str, 1) = 10
+
+decode(str, 2) = 100
+
+
+
+ 2^32 >= N > 1000
+
+
+
+Microsoft - Online Coding round ( Friend gave this) 
+
+
+1.Given two numbers write fibonacci sequence. for example 
+
+
+a.80,50 
+
+
+b.Result should be 80,50,30,20,10,10,0  
+
+
+2.Question on some optimization of a given code 
+
+
+a.Check whether name exists or not in a dictionary data structure
+
+
+3.Japanese Go Go Game -> Given 5x6 Matrix  two players can choose position to place. Have to write a method whether a move is permitted or not.  Basically a recursion problem.
+
+
+
+Amazon other friend gave recently 
+
+
+1.Given an array find number close to average
+
+
+2.Given an array shuffle its contents.
+
+
+
+
+
+Cloudera
+
+    Implement rmdir functionality given a path ( rm -fr)
+
+    Reverse linked list iterative and recursive
+
+
+Uber Telephonic Interview:
+
+
+Given an array if you element matches with it’s index return true, elements are in sorted order.
+
+
+
+Implement  blocking queue, with push and pop operations queue with limited size; its bounded buffer producer and consumer problem
+
+
+Microsoft Online Coding:
+
+
+Given vector of strings in format AAABBBCCC or AAA-BBB-CCCC re-format string and return result as BBB-AAA-CCCC
+
+
+Bug finding, convertToNumber(string str)
+
+
+Microsoft Telephonic Coding:
+
+
+Implement deep copy of linked list consists of  random pointers besides next; make it multi thread safe; what kind of locks you acquire and how it works
+
+
+
+
+Uber Onsite interview questions
+
+
+Will update; It was total 5 coding rounds one hour each
+
+
+Hortonworks Telephonic
+
+Q1: Given list of words return true if there is any prefix exists; these words are sorted in descending order of length.
+
+
+ex: abcdefg
+
+      bhjef
+
+      kjlm
+
+      abc
+
+      xy
+
+
+return true since abc is prefix of abcdefg if abc doesn’t exist in above list then return false
+
+
+Write a password generating function.
+
+
+Given a length generate a password according to the rules.
+
+
+Rules :
+
+
+1) Min Length of the password is 3
+
+2) Max Length is 72
+
+3) It must have at least one CAPITAL, one NUMERIC and one SPECIAL character
+
+4) No character must repeat 3 times, that is AA is valid in the password, but AAA is not. AeA
+
+
+Here are the character sets
+
+
+CAPITAL = A-Z;
+
+SMALL = a-z;
+
+SPECIAL = ~,!,@,#,$,%,^,&,*,(,)
+
+NUMERIC = 0-9;
+
+
+Please assume all helper functions that you need exists, for example, getRandomSmall or getRandomSpecial or feel free to make up
+
+functions that you need.
+
+
+Please also remember that the intend of this question is to be a conversation starter. We are more interested in seeing how you think and we would also like to see some sample of your code.
+
+
+Signature :
+
+
+-1
+
+
+int genPassword(char **password, int len);
+
+
+Below is solution I wrote; for reference;
+
+
+void
+
+fillThreePositions(string &password, int len) {
+
+    srand(time(NULL));
+
+    int prev = -1;
+
+    int count = 0;
+
+    while ( count < 3 )
+
+{
+
+      int indx = rand() % len;
+
+      if ( indx == prev ) {    
+
+        continue;
+
+ }
+
+  password[indx] = magicfn(count);
+
+      prev = indx;
+
+++count;
+
+}
+
+}
+
+int genPassword(string &password, int len)
+
+{
+
+    String temp(len);
+
+if ( len < 3 || len > 72 )
+
+        return ERROR_INVLEN;
+
+    
+
+fillThreePositions(temp, len);
+
+
+int i = 0;
+
+    while ( i < len )
+
+{
+
+    if ( temp[i] ! = ‘-1’ ) {
+
+        ++i;
+
+        continue;
+
+    }
+
+    if ( i < 2 ||  (i == len - 1) )
+
+    {
+
+        temp[i] = magic();
+
+               ++i;
+
+    }
+
+    else
+
+    {
+
+        char current = magic();
+
+if ( ((current == temp[i-1]) && (current == temp[i-2])) || ((current == temp[i-1]) && (current == temp[i+1])) ) {
+
+    continue;
+
+    }
+
+    
+
+    temp[i] = magic();
+
+    ++i;
+
+    
+
+    }
+
+}
+
+
+password = temp;
+
+return 0;
+
+}
+
+
+
+Microsoft Onsite interview:
+
+
+Interviews will be organized as 10 mins of intro and about your work, one simple design question on distributed systems/scalability/concurrency and finally one coding questions with 20-25 mins given.
+
+1.Find longest span of an array where a[i]=a[j] and |i-j| = maximum value
+
+
+a.example 1,2,3,0,1,2,3,1,3,2,0,0,0,2 -> in this case we have to return index 1 (which is array[1] = 2 and last index since i-j is maximum here), 
+
+
+b.Use map key as element and keep updating second index , and this can be done in single pass - > map<int, pair<int,int>> -> initially set pair<int,int> to same indices and if element found in map just update it.
+
+
+2.Semaphores -> Producer and Consumer problem, have implement complete class for rounded buffer ( queue ) and performed enqueue & dequeue operations as multi threaded safe
+
+
+3.In 1..n elements one element is replaced with zero, find missing element - this is simple problem of xor or sum of n elements and sum of given array.
+
+
+4.Designing a cache to support based on some specific requirements
+
+
+5.Design problem on Azure compute to optimize resource utilization
+
+
+6.Design problem on Azure compute to optimize some deployment services
+
+
+7.One coding question related to above design.
+
+8.
+
+Will update; It was total 4 coding & design rounds 45 mins each
+
+
+
+Salesforce - Telephonic round 
+
+You are given two files
+
+1.Consists of IP ranges per country ~10MB ex - [1.1.1.1 - 2.2.2.2] anything indicates range of US.
+
+
+2.Consists of user ip addresses and URL accessed
+
+
+
+
+You need to return top 10 countries from where most number of requests originated.
+
+You need to return top 10 URLs access group by country.
+
+
+Oracle Onsite Interview: 
+
+Total 5 Rounds:
+
+1.Two Questions - 60% of time around Design questions and 40% time around coding questions.
+
+
+a.Talk about distributed systems, your current work - Questions around the design.
+
+
+b.Given a dictionary sorted in lexicographical order (can be any dictionary not just english) you have to return all characters appeared lexicographically. It may have holes in the dictionary
+
+
+    Example:
+
+        Apple
+
+        Apricot
+
+        Ball
+
+        Bat
+
+        ..
+
+        …
+
+        Zoo return {a, b, ..z}
+
+
+2.Lunch interview with Manager - Cultural Fit around and design URL shortening service..
+
+
+3.Coding Question only , no design question.
+
+
+a.Consider Image as below 
+
+
+Class Image {
+
+        Int width;
+
+        Int height;
+
+        Void SetPixel(int x, int y, Pixel& p);
+
+        Pixel& GetPixel(int x, int y)
+
+}; 
+
+
+So it  is represented as 2D matrix, and how do you implement a function to draw a line between two points as by setting color to given pixel.
+
+This should not draw as some zig zag pattern, line should like approximately like a straight line.
+
+Void DrawLine(Image& image, int x1, int y1, int x2, int y2, Pixel& p) 
+
+4.Coding and Design 
+
+
+a.Talk about your current work and problems around distributed systems.
+
+
+b.Given a tree with extra point “next”, populate sibling pointers with this next, very standard interview question
+
+
+5.Final round - Only coding question - Given a rational number represent its decimal expression  in string format
+
+
+a.Struct rationalNumber {
+
+
+            Int a;
+
+            Int b;
+
+        };
+
+
+        std::string DecimalExpression(rationalNumber& r) {
+
+        }
+
+        Example given rationalNumber {2, 10} = 2/10 so your function should return “0.2”
+
+    If {1, 3} is given you should return 0.(3) -> As three repeats for {1. 6} it should be “0.1(6)”
+
+Expectation is do integer arithmetic step by step and construct the string. 
+
+    
+
+Saleforce Telephonice:
+
+
+http://www.geeksforgeeks.org/find-all-possible-interpretations/
+
+
+Given UserId and Cost find average of topK elements cost
+
+
+
+
+
+
+
+
+FB
+ 
+ 
+
+ 
+
+
+
+ 
+
+ 
+1. validation of a binary tree - the input is a binary tree - can be unbalanced, filled with integers. The objective is to give an output true/false based on the following condition - every integer in the left subtree should be less than equal to the node and every integer in the right subtree should be greater than equal to the current node.
+ 
+
+ 
+
+
+
+ 
+
+ 
+2. Name tagging. Given a scenario like in facebook where there is a friend list for every account, we have to identify friends names from a message. eg. given I have in my friends list {"Mark Daniel", "Jason Rupert", "Mark Day", "Steve Martin"}, and the message is "Mark Daniel says hi to Jason Rupert", the output should be {0: "Mark Daniel", 23: "Jason Rupert"}
+ 
+
+ 
+
+
+
+ 
+
+ 
+3. Matrix word search. given a rectangular grid of letters and a word, a true/false result has to be given to indicate whether the word can be formed by tracing a random walk on the square grid with step size one and no revisiting of cells.
+ 
+
+ 
+eg,
+ 
+
+ 
+a d k a g
+ 
+
+ 
+a f i k a
+ 
+
+ 
+e r n e t
+ 
+
+ 
+
+
+
+ 
+
+ 
+and word "fine" should return true.
+ 
+
+ 
+
+
+
+ 
+
+ 
+4. Minesweeper grid generator
+ 
+
+ 
+write an algo to generate a random minesweeper grid with 1 for mined and 0 for no mine. the only inputs are the grid size and number of mines.
+ 
+
+ 
+
+
+
+ 
+
+ 
+5. Imagine that you are an software engineer and a Program Manager has asked you to write a class or classes to back a UI control. So, the UI control looks something like a multi-state tree control: every node may have multiple children, and each node can be in a checked state, in which case all if it's children are also checked, or unchecked, in which case all of it's children are also unchecked. However, if the node has both checked and unchecked children, then it's in a "mixed" state.
+ 
+
+ 
+ 
+
+ 
+A [M]
+ 
+
+ 
+ D [ ]
+ 
+
+ 
+ E [X]
+ 
+
+ 
+   F [X]
+ 
+
+ 
+B [ ]
+ 
+
+ 
+C [ ]
+ 
+
+ 
+  G [ ]
+ 
+
+ 
+  E [ ]
+ 
+
+ 
+    H [ ]
+ 
+
+ 
+
+
+
+ 
+
+ 
+Once you write the class, write a method to 'set' the state of a node.
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+Google
+ 
+
+ 
+1. Assume you are given a datastructure that contains all the stars in the universe, write an algo to get the 100 closest stars to a given point.
+ 
+
+ 
+
+
+
+ 
+
+ 
+2. Permutations of a string. Can contain duplicates.
+ 
+
+ 
+  additional question: Tree BFS traversal
+ 
+
+ 
+
+
+
+ 
+
+ 
+3. Design a maze with entry and exit. Write a method to say if there is a path from entry to exit.
+ 
+
+ 
+
+
+
+ 
+
+ 
+4. Given a 2-D array (represented as a 1-d array and the number of columns), find the sum of all elements from the first element (top left corner) to the current element. Do it for all elements in the array.
+ 
+
+ 
+  Solution: Dynamic Programming with O(width) storage
+ 
+
+ 
+
+
+
+ 
+
+ 
+5. Given a ambiguous input how many ways can you parse. No need for all the possibilities, just the number of ways.
+ 
+
+ 
+  The problem boils down to using DP. No need for recursion to generate all possibilities.
+ 
+
+ 
+  eg: Morse code. The English alphabet is represented with "." and "-" with each character represented between 1 and 4 morse chars
+ 
+
+ 
+  There are multiple ways to parse an incoming morse code. Find the total number of ways.
+ 
+
+ 
+
+
+
+ 
+
+ 
+6. Design Google Wide Profiling
+ 
+
+ 
+
+
+
+ 
+
+ 
+7. An employee can travel between company locations on the weekends.
+ 
+
+ 
+  Given: List of cities where a company is based, and for each city the number of holidays during each week in a year
+ 
+
+ 
+  Objective: Maximize the number of holidays an employee can get by judiciously traveling between the different locations
+ 
+
+ 
+  Constraints:
+ 
+
+ 
+   -> Fly on weekends (at most can go to only one other city)
+ 
+
+ 
+   -> weekends are holidays everywhere.
+ 
+
+ 
+   -> direct flight exists for all cases.
+ 
+
+ 
+   -> can only travel to another city when the flight duration <=7 hrs (implies: missing edges)
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+Oracle:
+ 
+
+ 
+1. Given a dictionary sorted in lexicographic order, return the ordering of the alphabet.
+ 
+
+ 
+  http://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/
+ 
+
+ 
+  Answer: topographical sort
+ 
+
+ 
+
+
+
+ 
+
+ 
+2. Class Image {
+ 
+
+ 
+        Int width;
+ 
+
+ 
+        Int height;
+ 
+
+ 
+        Void SetPixel(int x, int y, Pixel& p);
+ 
+
+ 
+        Pixel& GetPixel(int x, int y)
+ 
+
+ 
+  };
+ 
+
+ 
+  Draw a line between two points:
+ 
+
+ 
+     Void DrawLine(Image& image, int x1, int y1, int x2, int y2, Pixel& p)
+ 
+
+ 
+
+
+
+ 
+
+ 
+3. Given a tree with extra point “next”, populate sibling pointers with this next, very standard interview question
+ 
+
+ 
+
+
+
+ 
+
+ 
+4. Given a rational number return a decimal representation in string format:
+ 
+
+ 
+   Input: 2 / 10   Output: 0.2
+ 
+
+ 
+   Input: 1 / 3    Output: 0.(3)   () indicates repeatition
+ 
+
+ 
+
+
+
+ 
+
+ 
+Salesforce:
+ 
+
+ 
+1. Given a very large list of IPv4 (4 bytes) addresses with hit counts, and a map from address range to countries, find top 10 IPs for each country
+ 
+
+ 
+  Answer: radix sort
+ 
+
+ 
+
+
+
+ 
+
+ 
+Amazon:
+ 
+
+ 
+1. Find medians for an online stream of data. Leetcode: medianII
+ 
+
+ 
+2. Binary Tree Serialization and Deserialization to a file
+ 
+
+ 
+3. Lambda like scheduling - Example - List<Request> and List<Machine>, write a scheduler to schedule requests across homogenous machines, objective maximize resource utilization.
+ 
+
+ 
+4. Design Question - How do you design pastebin.
+ 
+
+ 
+5. Lot of questions around Amazon's leadership principles.
+ 
+
+ 
+
+
+
+ 
+
+ 
+Microsoft:
+ 
+
+ 
+1. URL shortening
+ 
+
+ 
+
+
+
+ 
+
+ 
+Snap:
+ 
+
+ 
+Snap Telephonic Question:
+ 
+
+ 
+/*
+ 
+
+ 
+   words = {cat, eat, bat, fat, car, cab, cot, dot, bee, dog}
+ 
+
+ 
+  
+ 
+
+ 
+   cat -> bat, eat, car, cot
+ 
+
+ 
+  
+ 
+
+ 
+   cat, dog ?
+ 
+
+ 
+   cat -> cot -> dot -> dog (true)
+ 
+
+ 
+  
+ 
+
+ 
+   cat, bee ?
+ 
+
+ 
+   cat -> bat -> (false)
+ 
+
+ 
+*/
+ 
+
+ 
+
+
+
+ 
+
+ 
+class WordPathFinder {
+ 
+
+ 
+   public:
+ 
+
+ 
+       WordPathFinder(set<string>& words) {}
+ 
+
+ 
+       WordPathFinder(set<string> words){           
+ 
+
+ 
+       }       
+ 
+
+ 
+       bool isPathExists(string a, string b) {}
+ 
+
+ 
+};
+ 
+
+ 
+Write method to check if path exists between two given strings;
+ 
+
+ 
+
+
+
+ 
+
+ 
+Qualtrics:
+ 
+
+ 
+Teleponic = Given a dictionary and a senetence "iloveindia" break it down to possible word combinations - ex: I Love India; DP problem.
+ 
+
+ 
+1. Rolling lists example:
+ 
+
+ 
+  struct Node {
+ 
+
+ 
+  int count;
+ 
+
+ 
+  int buffer[MAX_SIZE];
+ 
+
+ 
+  Node* next;
+ 
+
+ 
+  };
+ 
+
+ 
+
+ 
+
+ 
+  MAX_SIZE is 4 and count indicates number of existing elements in the node, ex: [10, 20, 30, 40, -6, -8, 12] array can be reprasented as rolling list node1, node2, node3, node1 = [count = 2 buffer[] = {10, 20}, next = node2} so on.. Implement int Get(int index) and void Insert(int index, int value) - Insert function should move elements if given slot is already full. example Get(4) should return -6, Insert(5, 20) should push elements in rolling list.
+ 
+
+ 
+
+ 
+
+ 
+2. stuct List {
+ 
+
+ 
+    int startTimeSlot;
+ 
+
+ 
+    int endTimeSlot;
+ 
+
+ 
+    int memoryUtilizaton;
+ 
+
+ 
+    };
+ 
+
+ 
+    Given List<Request> write a function to return maximum utilization point. Ex - R1 = { T1, T2, 10} R2 = {T2, T4, 30} R3= {{T3, T4, 20} - max utilizatoin here is at T3 30 + 20; at T4 it is 0, at T1 it is 10, at T2 it is 30 - 10 = 20;
+ 
+
+ 
+   
+ 
+
+ 
+3. Design questions around compression
+ 
+
+ 
+4. Smallest substring - Given "QUALTRICSRESULTS" and given other set of chars <R, C, S> return smallest substring's length with all characters - In this exmaple 3 CSR;
+ 
+
+

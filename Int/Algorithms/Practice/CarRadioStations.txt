@@ -1,0 +1,74 @@
+int getStrength ( int freq );
+
+//
+//  strengths -> 0 - 10
+//  frequencies ->  1 - 100
+//  Store 6 top frequencies in 6 presets
+//
+
+int Max_stations = 6;
+
+public void setPresets() 
+{
+   int Max_Frequency = 100;
+   
+   int frequency = 1;
+
+   bool isAllStationsSet = false;
+   //                                 frequency, strength        
+   IDictionary<int, Tuple<int,int>> stations  = new Dictionary<int, Tuple<int,int>>(6);
+   
+   while(frequency <= Max_Frequency)
+   {
+      if(getStrength(frequency) >0)
+     {
+        
+      }      
+   }
+}
+
+private RearrangeStations(int strength, int freqnency, IDictionary<int, Tuple<int,int>> stations, bool isAllStationsSet)
+{
+   int stationCount = 0;
+  
+      if(!isAllStationsSet)
+        {
+           while( stationCount  < Max_stations)
+           {
+              if(stations[stationCount].Item2 < strength)
+              {
+                    stationCount ++;
+                 
+              }
+             else
+             {
+                  stations[stationCount].Item2  = newTuple<freqnency, strength>());
+             }
+           }
+         }
+        else
+        {
+         stationCount =0;
+         int nextStation = stationCount +1;
+
+           if(stations[0].Item2 < strength)
+           {
+              while( stationCount  < Max_stations)
+              {         
+                  if(stations[nextStation].Item2 < strength)
+                {
+                  stations[stationCount] =  stations[nextStation];
+                }
+              }
+            }           
+        } 
+  
+
+}
+
+
+                              18  23
+1 1 1 1 1 1 2 3 4 5 10  10 
+
+
+1 2 2 3 4 5

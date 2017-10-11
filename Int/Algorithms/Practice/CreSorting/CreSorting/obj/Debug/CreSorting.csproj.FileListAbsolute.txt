@@ -1,0 +1,5 @@
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\CreSorting\CreSorting\bin\Debug\CreSorting.exe.config
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\CreSorting\CreSorting\bin\Debug\CreSorting.exe
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\CreSorting\CreSorting\bin\Debug\CreSorting.pdb
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\CreSorting\CreSorting\obj\Debug\CreSorting.exe
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\CreSorting\CreSorting\obj\Debug\CreSorting.pdb

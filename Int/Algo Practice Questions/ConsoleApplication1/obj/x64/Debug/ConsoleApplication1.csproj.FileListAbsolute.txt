@@ -1,0 +1,5 @@
+C:\Users\bhkhaund\Desktop\ConsoleApplication1\bin\x64\Debug\ConsoleApplication1.exe.config
+C:\Users\bhkhaund\Desktop\ConsoleApplication1\bin\x64\Debug\ConsoleApplication1.exe
+C:\Users\bhkhaund\Desktop\ConsoleApplication1\bin\x64\Debug\ConsoleApplication1.pdb
+C:\Users\bhkhaund\Desktop\ConsoleApplication1\obj\x64\Debug\ConsoleApplication1.exe
+C:\Users\bhkhaund\Desktop\ConsoleApplication1\obj\x64\Debug\ConsoleApplication1.pdb

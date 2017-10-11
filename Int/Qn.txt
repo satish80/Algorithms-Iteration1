@@ -1,0 +1,51 @@
+Questions
+
+	1) Reverse a string (in-place)
+	2) Remove duplicates in a string
+	3) Identify the position of a character in string (Bayer-moore algorithm)
+	4) Permutation of a given string
+	5) Number to words (eg: input= 110, output hundred and ten, input= 230, output = two hundred and thirty)
+	6) Remove duplicates in an integer array
+        7) Towers of Hanoi
+ 	8) Print combinations of numbers dialled (in a Phone)
+	
+	
+Problems:
+	1) Design a car FM station to store the FM frequencies into channels with best signal strengths 
+	2) Design an elevator system  (2 elevators) with floors served upto 10
+	3) Design a Reader Writer Lock to allow many threads to read the value of a property, but only one can write at a time (semaphores can be used to achieve)
+	4) Design a Maze (hint: n * n matrix with a recursion to reach the destination )
+	5) Design a SuDoKu
+	6) Find the least denomination for a given number (within 1, 2,5 ). Eg: Rs 10 can be denominated as 5+5 and 3 can be 1 +2 with the values given
+	7) 
+	
+
+Arrays:
+	1) Identify median of sorted array
+	2) Print the ascending order / median / minimum of sorted rotated array (6 7 1 2 3 4 5)
+	3) Remove duplicates from an array (2 3 6 2 5 3)
+	4) Shuffle cards (use Random number generation)
+	5) Array to Binary search tree
+	
+Integer related:
+
+	1) Prime numbers between a range
+	
+Data structures Problems: Integers, Linked lists, Stacks, Queues:
+	1) Quick sort
+	2) Heap sort
+	3) Merge sort
+	4) Bubble sort
+	5) Radix sort
+	6) Reverse a stack
+	
+Trees:
+	1) Search for a value in a Binary search tree
+   2)  Insert  / delete a value to/from a binary search tree
+	3) Mirror the values of a binary tree (the values of left and right should be swapped)
+	4) InOrder / Preorder/ PostOrder/ LevelOrder/ Reverse LevelOrder traversals
+	5) Height of a tree
+	6) Is tree a Binary search tree?
+	7) Find Ancestors of a node in a tree
+	8) Reverse a tree (Leaf nodes would be the root nodes and the child nodes of root node would be parent of root node and so on..)
+

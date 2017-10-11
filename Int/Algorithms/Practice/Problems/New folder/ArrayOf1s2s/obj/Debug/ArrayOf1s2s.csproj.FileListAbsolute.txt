@@ -1,0 +1,6 @@
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\New folder\ArrayOf1s2s\bin\Debug\ArrayOf1s2s.exe.config
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\New folder\ArrayOf1s2s\bin\Debug\ArrayOf1s2s.exe
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\New folder\ArrayOf1s2s\bin\Debug\ArrayOf1s2s.pdb
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\New folder\ArrayOf1s2s\obj\Debug\ArrayOf1s2s.csprojResolveAssemblyReference.cache
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\New folder\ArrayOf1s2s\obj\Debug\ArrayOf1s2s.exe
+E:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\New folder\ArrayOf1s2s\obj\Debug\ArrayOf1s2s.pdb

@@ -1,0 +1,118 @@
+#include<stdio.h>
+
+
+struct Node
+{
+  int data;
+  Node *next;
+};
+
+Node *ReverseList(Node *);
+Node *BuildList(int count);
+
+void middleSplit(Node **head,Node **secondHalf);
+
+int main(void)
+{
+Node *head = BuildList(10);
+Node *current = head;
+
+while(current != NULL)
+{
+  cout<<current->data<<endl;
+  current = current->next;
+}
+
+cout<<"--------------------"<<endl;
+
+head = ReverseList(head);
+current = head;
+
+while(current != NULL)
+{
+  cout<<current->data<<endl;
+  current = current->next;
+}
+
+cout<<"--------------------"<<endl;
+Node *second = NULL;
+middleSplit(&head,&second);
+current = head;
+while(current != NULL)
+{
+  cout<<current->data<<endl;
+  current = current->next;
+}
+
+cout<<"--------------------"<<endl;
+current = second;
+while(current != NULL)
+{
+  cout<<current->data<<endl;
+  current = current->next;
+}
+cout<<"--------------------"<<endl;
+
+return 0;
+}
+
+void middleSplit(Node **head,Node **secondHalf)
+{
+   Node *slow = *head;
+   Node *fast = (*head)->next;
+
+   if(*head == NULL) return;
+   if((*head)->next == NULL) return;
+
+   while(fast != NULL && fast->next !=NULL)
+   {
+      slow = slow->next;
+      fast = fast->next->next;
+   }
+
+   cout<<"Loop exited at @"<<slow->data<<endl;
+   
+   if(fast != NULL) //-i.e odd lenght
+   {
+     slow = slow->next;
+   }
+   *secondHalf = slow->next;
+   slow->next = NULL;
+   return;
+   
+}
+
+
+Node *ReverseList(Node *head)
+{
+   Node *previous = NULL;
+   Node *temp;
+   Node *currPtr = head;
+   while(currPtr != NULL)
+   {
+      temp = currPtr->next;
+      currPtr->next=previous;
+      previous = currPtr;
+      currPtr = temp;
+   }
+  
+  return previous;
+}
+
+Node *BuildList(int count)
+{
+  struct Node dummy;
+  Node *tail = &dummy;
+
+  while(count >0)
+  {
+     Node *newNode = (Node *)malloc(sizeof(Node));
+     newNode->data = count;
+     newNode->next = NULL;
+     tail->next=newNode;
+     tail=newNode;
+     count--;
+  }
+
+  return(dummy.next);
+}

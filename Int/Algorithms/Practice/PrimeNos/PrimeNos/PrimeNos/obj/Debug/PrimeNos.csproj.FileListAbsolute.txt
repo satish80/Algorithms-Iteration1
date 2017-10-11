@@ -1,0 +1,15 @@
+F:\SkyDrive\Documents\Personal\Tech\Interview\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\bin\Debug\PrimeNos.exe.config
+F:\SkyDrive\Documents\Personal\Tech\Interview\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\bin\Debug\PrimeNos.exe
+F:\SkyDrive\Documents\Personal\Tech\Interview\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\bin\Debug\PrimeNos.pdb
+F:\SkyDrive\Documents\Personal\Tech\Interview\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\obj\Debug\PrimeNos.csprojResolveAssemblyReference.cache
+F:\SkyDrive\Documents\Personal\Tech\Interview\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\obj\Debug\PrimeNos.exe
+F:\SkyDrive\Documents\Personal\Tech\Interview\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\obj\Debug\PrimeNos.pdb
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\bin\Debug\PrimeNos.exe.config
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\obj\Debug\PrimeNos.exe
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\obj\Debug\PrimeNos.pdb
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\bin\Debug\PrimeNos.exe
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\bin\Debug\PrimeNos.pdb
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\obj\Debug\PrimeNos.csprojResolveAssemblyReference.cache
+C:\Users\sajana\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\bin\Debug\PrimeNos.exe.config
+C:\Users\sajana\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\obj\Debug\PrimeNos.exe
+C:\Users\sajana\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\PrimeNos\PrimeNos\PrimeNos\obj\Debug\PrimeNos.pdb

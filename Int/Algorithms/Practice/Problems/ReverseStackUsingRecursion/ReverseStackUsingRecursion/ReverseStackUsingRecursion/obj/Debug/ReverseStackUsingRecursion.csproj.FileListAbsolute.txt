@@ -1,0 +1,6 @@
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\ReverseStackUsingRecursion\ReverseStackUsingRecursion\ReverseStackUsingRecursion\bin\Debug\ReverseStackUsingRecursion.exe.config
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\ReverseStackUsingRecursion\ReverseStackUsingRecursion\ReverseStackUsingRecursion\bin\Debug\ReverseStackUsingRecursion.exe
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\ReverseStackUsingRecursion\ReverseStackUsingRecursion\ReverseStackUsingRecursion\bin\Debug\ReverseStackUsingRecursion.pdb
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\ReverseStackUsingRecursion\ReverseStackUsingRecursion\ReverseStackUsingRecursion\obj\Debug\ReverseStackUsingRecursion.csprojResolveAssemblyReference.cache
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\ReverseStackUsingRecursion\ReverseStackUsingRecursion\ReverseStackUsingRecursion\obj\Debug\ReverseStackUsingRecursion.exe
+F:\SkyDrive\Documents\Personal\Tech\Int\Algorithms\Practice\Problems\ReverseStackUsingRecursion\ReverseStackUsingRecursion\ReverseStackUsingRecursion\obj\Debug\ReverseStackUsingRecursion.pdb

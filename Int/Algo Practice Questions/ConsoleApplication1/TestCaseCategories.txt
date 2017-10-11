@@ -1,0 +1,45 @@
+﻿Test Case Categories:
+1) Black box testing
+2) White box testing
+3) Unit testing [Onboard to Build - test automation]
+5) Integration testing
+6) Functional testing [Onboard to Build - test automation]
+7) System testing
+8) Globalization and Localization (multi-language, computer regional settings)
+9) Regression testing
+10) Acceptance testing (test from user team for customer requirement)
+11) Load testing (Performance - thresold and latency)
+12) Stress testing
+13) Usability testing – User-friendliness check.
+14) Recovery testing
+15) Security testing
+16) Compatibility testing [previous versions, hardware configuration, e.g. x86, x64]
+17) Alpha testing – In house virtual user environment
+18) Beta testing – by end-users
+19) Exploratory Test - simultaneous learning, test design and test execution
+20) Comparison testing
+21) Install/uninstall testing
+22) End-to-end testing
+23) Incremental integration testing [test as and when features are added]
+
+Automation:
+1) Code Based (e.g. Unit test, Smoke test, load test, regression, high peiority features) 
+[NotGood: Visual Test, Usability, Localization, Installation, Test cases with applogic to be duplicated should not be automated ]
+2) GUI based (record-and-play)
+
+Defect Density – This metric is calculated by taking the total number of defects found and dividing it by the number of test cases executed for a specific component, 
+functionality or use case. If high defect density appears in a specific area, a causal analysis should be conducted. The reasons could vary from complexity of requirements, 
+design/implementation issues, inappropriate allocation of development resources, lack of training etc.
+
+Test Tools:
+1) QTP (HP-QuickTestProfessional) - functional and regression test automation
+2) TOSCA
+3) Visual Studio Test Professional
+4) Telerik WebUI test studio
+5) Rational Functional Tester
+
+The Test Verification activities involve use case verification, requirements verification, and functional design verification
+Test Validation supports Defect Detection and subsequent Defect removal strategies to compliment the Defect Prevention, e.g. functional, UAT, security, perf etc
+
+Requirements -> Test Scenarios -> Test Cases
+TestSet (e.g. Regression) <- TestSuite/Test Scenario (a specific functionality) <- TestCase <- Test Steps (test procedure)
